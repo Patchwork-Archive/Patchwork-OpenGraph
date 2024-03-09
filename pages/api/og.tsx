@@ -29,20 +29,20 @@ export default async function handler(req: NextRequest) {
     return new ImageResponse(
       (
         <div tw="bg-[#F6F6F6F0] text-black h-full w-full flex items-center justify-center">
-          <div tw="flex flex-col justify-center items-center w-2/3 h-full">
+          <div tw="flex flex-col justify-center items-center w-full h-full">
             <img
               src="https://files.pinapelz.com/android-chrome-512x512.png"
               tw="h-64 w-64 rounded-full"
             />
-            <h1 tw="text-3xl font-bold mb-1">Patchwork Archive</h1>
+            <h1 tw="text-4xl font-bold mb-1">Patchwork Archive</h1>
             <h2 tw="mt-0 text-xl">Preserving rhythm, one video at a time</h2>
-            <p tw="text-lg mt-0">We have {numArchivedString} videos archived taking up {storageUsedString} GB</p>
+            <p tw="text-3xl mt-0">We have {numArchivedString} videos archived taking up {storageUsedString} GB</p>
             <p tw="text-lg -mt-2 text-[#828282]">As of {lastUpdated} (PST)</p>
           </div>
         </div>
       ),
       {
-        width: 700,
+        width: 900,
         height: 530,
         headers: {
           "Cache-Control": "no-cache, no-store",
