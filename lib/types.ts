@@ -1,8 +1,4 @@
-export type TopStory = {
-	id: number;
-	by: string;
-	url: string;
-	time: number;
-	title: string;
-	score: number;
+export type PatchworkData = {
+    number_of_files: number;
+    storage_size: number;
 };
