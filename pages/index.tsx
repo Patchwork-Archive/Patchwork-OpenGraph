@@ -19,7 +19,8 @@ export default function Page() {
           }
         />
       </Head>
-      <h1>A page with Open Graph Image.</h1>
+      <h1>Patchwork OpenGraph Image. You won't find much here</h1>
+      <a>https://patchwork.moekyun.me</a>
     </div>
   )
 }
