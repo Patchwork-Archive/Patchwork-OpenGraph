@@ -18,7 +18,7 @@ export default async function handler() {
 		const archiveData = await getArchiveData();
         await setPatchworkData(archiveData);
         return NextResponse.json({
-            data: `Updated top stories at ${new Date().toISOString()}. Number of songs archived: ${archiveData.number_of_files}, storage used: ${archiveData.storage_size} gigabytes`
+            data: `Updated top stories at ${new Date().toISOString()}. Number of songs archived: ${archiveData.number_of_files}, storage used: ${(archiveData.storage_size)/1024} gigabytes`
         });
 	} catch (error: any) {
 		console.log({ error });
